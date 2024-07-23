@@ -5,6 +5,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import io
+import numpy as np
+np.bool = np.bool_
 
 # Your industry data
 data = """
@@ -107,11 +109,11 @@ st.table(formatted_df)
 # Adding the footer
 footer = """
 <div style="text-align: center;">
-    <p>This dashboard created by 
-    <a href="https://faizazizan.com" target="_blank">Faiz Azizan</a> 
-    ❤️ Feel free to take a look at more tools 
-    <a href="https://faizazizan.com/tools" target="_blank">here</a>.
-    </p>
+    # <p>This dashboard created by 
+    # <a href="https://faizazizan.com" target="_blank">Faiz Azizan</a> 
+    # ❤️ Feel free to take a look at more tools 
+    # <a href="https://faizazizan.com/tools" target="_blank">here</a>.
+    # </p>
 </div>
 """
 
